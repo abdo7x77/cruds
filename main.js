@@ -55,7 +55,7 @@ submit.onclick = function(){
         count:count.value,
         categry:categry.value.toLowerCase(),
     }
-    if(title.value !=''&&price.value !=''&&categry.value !='' &&newpro.count<100 ){
+    if(title.value !=''&&price.value !='' &&newpro.count<100 ){
         if(mood === 'create'){
             //count
             if(newpro.count> 1){
