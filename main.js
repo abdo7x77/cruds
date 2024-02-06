@@ -83,6 +83,7 @@ submit.onclick = function(){
     // console.log(datapro);
 
     showData();
+    clearData();
 }
 
 // clear inputs
