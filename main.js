@@ -55,7 +55,7 @@ submit.onclick = function(){
         count:count.value,
         categry:categry.value.toLowerCase(),
     }
-    if(title.value !=''&&price.value !=''&&categry.value !='' &&newpro.count<100 ){
+    if(title.value !=''&&price.value !='' ){
         if(mood === 'create'){
             //count
             if(newpro.count> 1){
@@ -69,10 +69,11 @@ submit.onclick = function(){
             datapro[  temp ] = newpro;
             mood ='create'
             submit.innerHTML='create'
-            count.style.display='block'
+            count.style.display='block';
+            // clearData();
         }
     }else{
-        clearData();
+        clearData()
     }
     
     // console.log(datapro);
@@ -83,6 +84,7 @@ submit.onclick = function(){
     // console.log(datapro);
 
     showData();
+    clearData()
 }
 
 // clear inputs
