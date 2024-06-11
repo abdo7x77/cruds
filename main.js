@@ -73,7 +73,7 @@ submit.onclick = function(){
             // clearData();
         }
     }else{
-        clearData()
+        clearData();
     }
     
     // console.log(datapro);
